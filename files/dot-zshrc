@@ -1,0 +1,15 @@
+# Configuration Zsh basique
+export TERM=xterm-256color
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# Prompt simple (en attendant Powerlevel10k)
+PROMPT='%F{green}%n@%m%f:%F{blue}%~%f %# '
+
+# Chargement des alias globaux
+if [ -f /usr/local/etc/zshrc ]; then
+    source /usr/local/etc/zshrc
+fi
+
+# Autocompletion basique
+autoload -Uz compinit && compinit

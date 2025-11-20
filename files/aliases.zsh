@@ -1,0 +1,5 @@
+alias ll='ls -lGh'
+alias la='ls -lGha'
+alias update='sudo pkg update && sudo pkg upgrade'
+alias install='sudo pkg install'
+alias search='pkg search'
